@@ -33,4 +33,4 @@ This script lets players spawn a wheelchair vehicle using an item called wheelch
 
 ## Credits 🙌
 
-- Script by [Zartoz](https://github.com/Zartoz)
+- Made by [Zartoz](https://github.com/Zartoz)
