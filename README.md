@@ -1,10 +1,11 @@
-# QBCore Wheelchair Script
+# Advanced QBCore Wheelchair Script
 
-This script allows players to spawn a wheelchair vehicle by using an item called `wheelchair` in QBCore framework.
+This script lets players spawn a wheelchair vehicle using an item called wheelchair within the QBCore framework. Both the wheelchair item and vehicle spawn code can be customized in the config.lua. Players can also remove the wheelchair and return it to their inventory. Adjust the target system by modifying the config.lua file.
 
 ## Features
 
 - Spawn a wheelchair vehicle (`iak_wheelchair`) using the `wheelchair` item.
+- Remove the wheelchair using `qb-target` or `ox_target` (configurable in `config.lua`).
 
 ## Installation
 
