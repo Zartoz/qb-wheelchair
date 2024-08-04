@@ -1,5 +1,5 @@
 Config = {}
 
-Config.WheelchairItem = 'wheelchair'
-Config.WheelchairModel = 'iak_wheelchair'
-Config.TargetSystem = 'ox_target'  -- Set to 'qb-target' or 'ox_target'
+Config.WheelchairItem = 'wheelchair' -- Wheelchair item
+Config.WheelchairModel = 'iak_wheelchair' -- Vehicle spawn code 
+Config.TargetSystem = 'ox_target'  -- Target system currenly supported only qb-target and ox_target
