@@ -9,7 +9,7 @@ This script allows players to spawn a wheelchair vehicle by using an item called
 ## Installation
 
 1. **Download and Extract**
-   - Download the script and extract it to your `resources` folder.
+   - Download the script, remove the main from the end and extract it to your `resources` folder.
 
 2. **Add to Server Config**
    - Add the resource to your `server.cfg`:
@@ -33,7 +33,6 @@ This script allows players to spawn a wheelchair vehicle by using an item called
 ## Credits
 
 - Script by [Zartoz](https://github.com/YourName)
-- For exceptional coding assistance and custom projects, check out @fobozo on Discord!
 
 ## Support
 
