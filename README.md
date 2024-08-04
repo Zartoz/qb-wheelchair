@@ -32,4 +32,4 @@ This script allows players to spawn a wheelchair vehicle by using an item called
 
 ## Credits
 
-- Script by [Zartoz](https://github.com/YourName)
+- Script by [Zartoz](https://github.com/Zartoz)
