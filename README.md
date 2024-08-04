@@ -33,7 +33,3 @@ This script allows players to spawn a wheelchair vehicle by using an item called
 ## Credits
 
 - Script by [Zartoz](https://github.com/YourName)
-
-## Support
-
-- For support, open an issue on the [GitHub repository](https://github.com/Zartoz/qb-wheelchair) or contact @fobozo on Discord.
