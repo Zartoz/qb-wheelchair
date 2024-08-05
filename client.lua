@@ -24,8 +24,16 @@ local function spawnWheelchair(playerPed)
     local vehicle = CreateVehicle(Config.WheelchairModel, spawnCoords.x, spawnCoords.y, spawnCoords.z, GetEntityHeading(playerPed), true, false)
     TaskWarpPedIntoVehicle(playerPed, vehicle, -1)
 
+    if Config.FuelScript == 'ps-fuel' then
+        exports['ps-fuel']:SetFuel(vehicle, 100)
+    elseif Config.FuelScript == 'legacy-fuel' then
+        exports['LegacyFuel']:SetFuel(vehicle, 100)
+    elseif Config.FuelScript == 'cdn-fuel' then
+        exports['cdn-fuel']:SetFuel(vehicle, 100.0)
+    end
+
     TriggerEvent('vehiclekeys:client:SetOwner', GetVehicleNumberPlateText(vehicle))
-    
+
     hasWheelchair = true
     spawnedWheelchair = vehicle
 
@@ -62,7 +70,6 @@ AddEventHandler('QBCore:Client:OnUseItem', function(itemName)
         local playerPed = PlayerPedId()
         if not hasWheelchair then
             spawnWheelchair(playerPed)
-
             TriggerServerEvent('qb-wheelchair:removeWheelchairItem')
         else
             QBCore.Functions.Notify('You already have a wheelchair spawned.', 'error')
