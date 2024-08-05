@@ -4,7 +4,7 @@ This script lets players spawn a wheelchair vehicle using an item called wheelch
 
 ## Features 🌟
 
-- Spawn a wheelchair vehicle (`iak_wheelchair`) using the `wheelchair` item. 🚀
+- Spawn a wheelchair vehicle (`iak_wheelchair`) (configurable) using the `wheelchair` item. 🚀
 - Remove the wheelchair using `qb-target` or `ox_target` (configurable in `config.lua`). ❌
 
 ## Installation ⚙️
