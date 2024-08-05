@@ -3,7 +3,7 @@ game 'gta5'
 
 author 'Zartoz'
 description 'Advanced wheelchair script made for QBCore Framework'
-version '1.0.0'
+version '1.2.0'
 
 shared_scripts {
     'config.lua'
