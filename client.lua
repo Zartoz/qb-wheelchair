@@ -30,7 +30,7 @@ local function spawnWheelchair(playerPed)
 
     if Config.FuelScript == 'ps-fuel' then
         exports['ps-fuel']:SetFuel(vehicle, 100)
-    elseif Config.FuelScript == 'legacy-fuel' then
+    elseif Config.FuelScript == 'LegacyFuel' then
         exports['LegacyFuel']:SetFuel(vehicle, 100)
     elseif Config.FuelScript == 'cdn-fuel' then
         exports['cdn-fuel']:SetFuel(vehicle, 100.0)
