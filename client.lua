@@ -8,7 +8,11 @@ local function removeWheelchair()
         spawnedWheelchair = nil
         hasWheelchair = false
 
-        TriggerServerEvent('qb-wheelchair:giveWheelchairItem')
+        if Config.InventorySystem == 'qb-inventory' then
+            TriggerServerEvent('qb-wheelchair:giveWheelchairItem')
+        elseif Config.InventorySystem == 'ox_inventory' then
+            TriggerServerEvent('qb-wheelchair:giveWheelchairItem') -- No change here, give back the item
+        end
     end
 end
 
@@ -70,7 +74,11 @@ AddEventHandler('QBCore:Client:OnUseItem', function(itemName)
         local playerPed = PlayerPedId()
         if not hasWheelchair then
             spawnWheelchair(playerPed)
-            TriggerServerEvent('qb-wheelchair:removeWheelchairItem')
+            if Config.InventorySystem == 'qb-inventory' then
+                TriggerServerEvent('qb-wheelchair:removeWheelchairItem')
+            elseif Config.InventorySystem == 'ox_inventory' then
+                TriggerServerEvent('qb-wheelchair:removeWheelchairItem')
+            end
         else
             QBCore.Functions.Notify('You already have a wheelchair spawned.', 'error')
         end
