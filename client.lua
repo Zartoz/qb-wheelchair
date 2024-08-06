@@ -11,7 +11,7 @@ local function removeWheelchair()
         if Config.InventorySystem == 'qb-inventory' then
             TriggerServerEvent('qb-wheelchair:giveWheelchairItem')
         elseif Config.InventorySystem == 'ox_inventory' then
-            TriggerServerEvent('qb-wheelchair:giveWheelchairItem') -- No change here, give back the item
+            TriggerServerEvent('qb-wheelchair:giveWheelchairItem') 
         end
     end
 end
